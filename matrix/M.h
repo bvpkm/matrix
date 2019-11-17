@@ -7,7 +7,7 @@ class M
 public:
 	unsigned rows; 
 	unsigned column;
-	int *data; // Данные выделяются в дин.памяти одним куском, чтобы снизить фрагментацию памяти
+	int *data; // Р”Р°РЅРЅС‹Рµ РІС‹РґРµР»СЏСЋС‚СЃСЏ РІ РґРёРЅ.РїР°РјСЏС‚Рё РѕРґРЅРёРј РєСѓСЃРєРѕРј, С‡С‚РѕР±С‹ СЃРЅРёР·РёС‚СЊ С„СЂР°РіРјРµРЅС‚Р°С†РёСЋ РїР°РјСЏС‚Рё
 
 	M(unsigned r = 3, unsigned c = 3);
 	M(int one);
@@ -15,9 +15,9 @@ public:
 	friend M operator+(const int& a, const M& mat);
 	M(M const & other);
 	M operator=(M const& other);
-	M operator+(M const& other); // Сложение двух матриц
-	M operator-(M const& other); // Вычитание двух матриц
-	M operator-(int a); // Вычитание матрицы и числа
-	M operator+(int a); // Сложение матрицы и числа
-	void print(); // Вывод матрицы в консоль
+	M operator+(M const& other); // РЎР»РѕР¶РµРЅРёРµ РґРІСѓС… РјР°С‚СЂРёС†
+	M operator-(M const& other); // Р’С‹С‡РёС‚Р°РЅРёРµ РґРІСѓС… РјР°С‚СЂРёС†
+	M operator-(int a); // Р’С‹С‡РёС‚Р°РЅРёРµ РјР°С‚СЂРёС†С‹ Рё С‡РёСЃР»Р°
+	M operator+(int a); // РЎР»РѕР¶РµРЅРёРµ РјР°С‚СЂРёС†С‹ Рё С‡РёСЃР»Р°
+	void print(); // Р’С‹РІРѕРґ РјР°С‚СЂРёС†С‹ РІ РєРѕРЅСЃРѕР»СЊ
 };
