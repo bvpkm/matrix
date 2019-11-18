@@ -2,6 +2,11 @@
 #include <iostream>
 #include <vector>
 
+M::~M() 
+{
+	delete[] data;
+}
+
 M::M(unsigned const r, unsigned const c) // Констурктор инициализирующий нулевую матрицу r x c
 {
 	rows = r;
@@ -10,7 +15,7 @@ M::M(unsigned const r, unsigned const c) // Констурктор инициа�
 	for (unsigned i = 0; i < rows; i++)
 		for (unsigned j = 0; j < column; j++)
 			data[i * column + j] = 0; 
-};
+}
 
 M::M(M const& other) // Конструктор копирования
 {
