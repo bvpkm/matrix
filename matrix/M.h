@@ -12,6 +12,7 @@ public:
 	M(unsigned r = 3, unsigned c = 3);
 	M(int one);
 	M(std::string data);
+	~M(); // Деструктор
 	friend M operator+(const int& a, const M& mat);
 	M(M const & other);
 	M operator=(M const& other);
